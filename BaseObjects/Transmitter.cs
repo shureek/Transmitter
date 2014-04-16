@@ -50,7 +50,9 @@ namespace KSoft
             {
                 try
                 {
+                    //TraceHelper.WriteEvent(sender, "Before sending");
                     sender.SendMessage(msg);
+                    //TraceHelper.WriteEvent(sender, "After sending");
                 }
                 catch (Exception ex)
                 {
